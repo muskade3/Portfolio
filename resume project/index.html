@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Muskan Goyal
+	</title>
+
+
+	<script src="https://kit.fontawesome.com/ecb733cfa1.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+    margin: 0px;
+}
+
+/*Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background:linear-gradient(to bottom, transparent 0%, black 100%),url("https://telecomtalk.info/wp-content/uploads/2022/01/macbook-air-with-m1-chip-still-a.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Horizontal Lists */
+
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin:0px;
+    color:white;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+}
+
+
+.horizontal-list li a {
+    color:white;
+    text-decoration: none;
+}
+
+.nav-menu li a:hover {
+    color:green;
+    border-bottom: 1px solid white;
+}
+
+.text-center {
+    text-align: center;
+}
+#name-social-container
+{
+    margin-top:20vh;
+}
+#my-name
+{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color:white;
+    font-weight: 700;
+    margin-bottom:0.5rem;
+}
+.social-icons li a i
+{ 
+    padding:10px;
+    font-size: 1rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover
+{
+    box-shadow: 0px 0px 6px 4px pink;
+}
+section
+{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+section:nth-child(2n)
+{
+    background-color:rgba(240 ,240 ,240, 0.8);
+}
+section:nth-child(2n+1)
+{
+    background-color:white;
+}
+.section-heading
+{
+    width:auto;
+    padding:20px 10px 20px;
+    margin:10px auto;
+    font-weight: 400;
+}
+.section-heading span{
+    font-size:40px;
+    color:#2857a4;
+    display:inline-block;
+    padding-top:10px;
+    margin-right:0.5rem;
+}
+.nav-menu li a
+{
+transition: color 0.5s,border-bottom 4s;
+}
+/*about-section*/
+#about
+{
+    height: auto;
+    width:100%;
+    position: relative;
+}
+#my-image
+{
+    height:12rem;
+    width:12rem;
+    margin:auto;
+    margin-top:-17vh;
+
+}
+#my-image img
+{
+    height:100%;
+    width:100%;
+    border-radius:50%;
+
+}
+
+#para
+{
+    
+    background-position: center;
+    text-decoration: none;
+    letter-spacing: 0.1rem;
+    color:darkgrey;
+    margin-top:0.5rem;
+}
+/*skills-section*/
+#skills
+{
+    width:100%;
+    height: auto;
+    /*padding:128px 0px;*/
+
+}
+.skills-display
+{
+    width: 70%;
+    display:grid;
+    grid-template-rows:1fr 1fr 1fr;
+    /*flex-wrap:wrap;*/
+   grid-template-columns:1fr 1fr 1fr;
+    justify-content: space-between;
+
+}
+.skill-progress
+{
+    width:11rem;
+    height: 2.2rem;
+    background-color:white;
+    border-radius: 0.8rem;
+    box-shadow: 1px 1px 2px 1px #b9b9b9 inset;
+    margin:25px;
+    overflow: hidden;
+}
+.skill-progress>div
+{
+    border-radius:20px 0px 0px 20px;
+    box-shadow:1px 1px 5px 2px #989882;
+}
+.skill-name span{
+    color: white;
+    font-size: 1rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+/*percentage classes*/
+.eighty-five-percent
+{
+width:85%;
+height:inherit;
+}
+.seventy-percent
+{
+    width:70%;
+    height: inherit;
+}
+.eighty-percent
+{
+    width:80%;
+    height: inherit;
+}
+.sixty-five-percent
+{
+    width:65%;
+    height: inherit;
+}
+.eighty-three-percent
+{
+    width: 83%;
+    height: inherit;
+}
+.seventy-percent
+{
+    width: 70%;
+    height: inherit;
+}
+.mb-blue
+{
+    background-color: #2857a4;
+}
+.mb-cyan
+{
+    background-color: cyan;
+}
+.mb-purple
+{
+    background-color: purple;
+}
+.mb-green
+{
+    background-color: green;
+}
+.mb-orange
+{
+    background-color: orange;
+}
+.mb-red
+{
+    background-color: red;
+}
+/* Portfolio Section */
+
+#portfolio-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 50px;
+    margin-bottom: 20px;
+    justify-content: space-around;
+}
+
+.portfolio-image-container {
+    max-width: 300px;
+    overflow: hidden;
+    margin: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio-details {
+    transition: all 0.5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    color: transparent;
+    text-align: center;
+    padding: 10px;
+}
+
+.portfolio-image-container:hover {
+    box-shadow: 0 0 20px #74ADC8;
+}
+
+.portfolio-image-container:hover .portfolio-details {
+    background-color: #80808078;
+    color: white;
+}
+
+/* Contact Form */
+
+#contacts {
+
+    background: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contacts h1,
+#contacts h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}/*/*
+/*time line*/
+/*.timeline
+{
+    position:relative;
+    width:75%;
+    border: 2px solid black;
+}
+.timeline-box
+{
+    position:relative;
+    margin:5px;
+    width:40%;
+    left:5%;
+    min-height: 150px;
+    border:2px solid black;
+}
+.timeline-box:nth-child(2n)
+{
+    left:53%;
+}
+.timeline-divider
+{
+    position: absolute;
+    height: 75%;
+    width:0;
+    border:3px dashed #0096fa6b;
+    top:10%;
+    left:50%;
+}
+.timeline-traveller
+{
+    position: sticky;
+    top:25%;
+    transform: rotate(90deg);
+    z-index: 2;
+}
+.timeline-box:nth-child(2n+1)::after
+{
+    content: '';
+    position: absolute;
+    top:30%;
+    right:-13%;
+    border-radius: 50%;
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index:1;
+
+}
+.timeline-box:nth-child(2n)::after
+{
+    content: '';
+    position: absolute;
+    top:30%;
+    left:-9%;
+    border-radius: 50%;
+    width:0.5rem;
+    height: 0.5rem;
+    background-color: red;
+    z-index:1;
+
+}*/*/*/
+/* Work Experience */
+#experience
+{
+    height:auto;
+}
+.timeline {
+    position: relative;
+    width: 75%;
+     
+}
+
+.timeline-box {
+    padding: 5px;
+    width: 40%;
+    min-height: 150px;
+    position: relative;
+    left: 5%;
+    text-align: right;
+     
+}
+
+.timeline-box::after {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: green;
+    top: 25%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-box:nth-child(2n) {
+    left: 53%;
+}
+
+.timeline-box:nth-child(2n+1)::after {
+    right: -11.8%;
+}
+
+.timeline-box:nth-child(2n)::after {
+    left: -9%;
+}
+
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
+.timeline-divider {
+    position: absolute;
+    width: 0;
+    top: 10%;
+    left: 50%;
+    border: 3px dashed blue;
+    height:75%;
+    border-left:0;
+}
+
+
+ .timeline-traveller {
+    position: sticky;
+    top: 135px;
+    z-index: 2;
+}
+
+.timeline-divider i {
+    transform: rotate(90deg);
+    margin-top: -35px;
+    display: block;
+    color: #2857a4;
+}
+/*education*/
+#education 
+{
+    height:auto;
+}
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -9.3% !important;
+    }
+
+    .timeline-divider {
+        top: 10%;
+        left: 2% ;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    
+    }
+
+    .my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+}
+
+    </style>
+</head>
+<body>
+	<header id="body-header">
+		<nav>
+			<ul class="horizontal-list text-center nav-menu">
+				<li>
+					<a href="#"> Home</a>
+				</li>
+				<li>
+					<a href="#about">About</a>
+				</li>
+				<li>
+					<a href="#skills"> Skill</a>
+				</li>
+				<li>
+					<a href="#experience">Experience</a>
+				</li>
+				<li>
+					<a href="#education">Education</a>
+				</li>
+				<li>
+					<a href="#portfolio">Portfolio</a>
+				</li>
+				<li>
+					<a href="#contacts">Contacts</a>
+				</li>
+			</ul>
+		</nav>
+		<div id="name-social-container">
+			<div class="text-center">
+				<h1 id="my-name">
+					Muskan Goyal
+				</h1>
+			</div>
+			<div>
+				<ul class="horizontal-list text-center social-icons">
+					<li>
+					<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+				</li>
+					<li><a href="#stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a></li>
+					<li><a href="#google"><i class="fa-brands fa-google-plus-g"></i></a></li>
+					<li><a href="#facebook"><i class="fa-brands fa-facebook-square"></i></a></li>
+					<li><a href="#quora"><i class="fa-brands fa-quora"></i></a></li>
+			</div>
+			</header>
+	
+	<main>
+		<section id="about">
+			<div id="my-image">
+				<img src="C:\Users\ROCKSTAR86\Documents\resume project\image\ashutosh.jpg">
+			</div>
+		<div id="para">
+			<p>
+		<!-- I am ashutosh goyal working as a ENGINEER-MAINTENANCE in Hindusthan engineering	and industries limited,I have good knowledge in overhead crane breakdowns,sand plant breakdowns,machine shop and preventive maintenance and I also practise Autocad and UG-NX to enhance my skills and wants to pursue my carrier in design.I have good knowledge of MS-EXCEL,Manpower handli -->
+        I am muskan goyal currently pursuing B.TECH in electronics and communication engineering (2nd year) from ymca Faridabad and I have done internship in past in a Ed-Tech platform Coding Ninjas where I am teaching assistant for java and dsa and I have good knowlegge of java and data structure.I am hardworking and goal oriented person.
+	</p>
+		</section>
+
+
+		<section id="skills">
+			<h1 class="section-heading mb75px ">
+				<span>
+					<i class="fas fa-chalkboard-teacher"></i>
+				</span>
+					<span>SKILLS</span>
+				</h1>
+				<div class="skills-display">
+					<div class="skill-progress">
+						<div class="eighty-five-percent mb-blue">
+							<div class="skill-name">
+								<span>JAVA</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="seventy-percent mb-cyan">
+							<div class="skill-name">
+								<span>HTML</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="eighty-percent mb-purple">
+							<div class="skill-name">
+								<span>CSS</span>
+							</div>
+						</div>
+					</div>
+
+<div class="skill-progress">
+						<div class="sixty-five-percent mb-green">
+							<div class="skill-name">
+								<span>DSA</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="eighty-three-percent mb-orange">
+							<div class="skill-name">
+								<span>ALGORITHMS</span>
+							</div>
+						</div>
+					</div>
+					<div class="skill-progress">
+						<div class="seventy-percent mb-red">
+							<div class="skill-name">
+								<span>SQL</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+		</section>
+		<section id="experience">
+			<h1 class="section-heading mb75px">
+				<span>
+					<i class="fas fa-briefcase"></i>
+				</span>
+				<span> Work Experience</span>
+			</h1>
+			<div class="timeline">
+				<div class="timeline-box">
+					<div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+				</div>
+				<div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div><h3 class="experience-designation  m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                 <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue"> Designation </h3>
+                        <h4 class="experience-company-name"> Company Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+
+
+				<div class="timeline-divider">
+				<div class="timeline-traveller">
+					<i class="fas fa-plane"></i>
+				</div>
+			</div>
+		</div>
+
+		</section>
+		
+        <section id="education">
+
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-graduation-cap"></i>
+                </span>
+                <span> Education </span>
+            </h1>
+
+            <div class="timeline">
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                         <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/J.C._Bose_University_of_Science_and_Technology%2C_YMCA_logo.png">
+                     </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-box right ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                          <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/J.C._Bose_University_of_Science_and_Technology%2C_YMCA_logo.png">   
+                            
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left ">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                         <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/J.C._Bose_University_of_Science_and_Technology%2C_YMCA_logo.png">
+                        </div>
+                        <h3 class="experience-designation  m0 m-blue"> Degree </h3>
+                        <h4 class="experience-company-name "> Institute Name </h4>
+                        <h5 class="experience-duration m0"> Month YYYY - Month YYYY </h5>
+
+                        <p class="experience-description text-align-justify"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
+                </div>
+                
+                <div class="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+		
+		        <section id="portfolio">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fas fa-th-list"></i>
+                </span>
+                <span> Portfolio </span>
+            </h1>
+
+            <div id="portfolio-container">
+
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="portfolio-image-container">
+                    <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
+                    <div class="portfolio-details">
+                        <p>
+                            Write here basic details about the project.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+		<section id="contacts">
+			 <h1 class="section-heading mb75px">
+                <span>
+                    <i class="far fa-address-card"></i>
+                </span>
+                <span> Contacts </span>
+             </h1>
+            <div id="contact-container">
+
+                <div id="contact-form-container">
+                    <form id="contact-form">
+                        <input id="input-name" name="name" type="text" placeholder="Your Name">
+                        <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
+                        <textarea id="input-message" name="input-message" rows="2" cols=40 placeholder="Message"></textarea>
+                        <button class="sub-btn" type="submit">SEND MESSAGE</button>
+                    </form>
+                </div>
+                <div id="my-details-container">
+
+                    <h3> Get In touch </h3>
+                    <p> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+
+                    <h3> My Address </h3>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Delhi, India</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>9999999999</span>
+                    </div>
+                    <div class="my-details-info-container">
+                        <i class="far fa-envelope"></i>
+                        <span>myemail@gmail.com</span>
+                    </div>
+                </div>
+            </div>
+		</section>
+	</main>
+</body>
